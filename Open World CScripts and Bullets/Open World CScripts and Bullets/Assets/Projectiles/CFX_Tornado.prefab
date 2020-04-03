@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5237753241789432906}
   - component: {fileID: 5237753241789432907}
   - component: {fileID: 5237753241789432908}
-  - component: {fileID: 5173476089793203402}
   - component: {fileID: 1364904265}
   m_Layer: 0
   m_Name: CFX_Tornado
@@ -51,7 +50,7 @@ ParticleSystem:
   cullingMode: 1
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 0
+  looping: 1
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -4638,20 +4637,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: 200, z: 0}
   space: 0
---- !u!136 &5173476089793203402
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5237753241789432910}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.7592706
-  m_Height: 2.859091
-  m_Direction: 2
-  m_Center: {x: -0.044408735, y: 0.087123245, z: 2.2265353}
 --- !u!54 &1364904265
 Rigidbody:
   m_ObjectHideFlags: 0
