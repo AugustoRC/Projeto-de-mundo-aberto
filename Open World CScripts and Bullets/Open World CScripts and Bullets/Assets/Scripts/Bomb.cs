@@ -7,7 +7,7 @@ public class Bomb : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("Explode", 3);
+        Invoke("Explode", 0.5f);
     }
 
     // Update is called once per frame

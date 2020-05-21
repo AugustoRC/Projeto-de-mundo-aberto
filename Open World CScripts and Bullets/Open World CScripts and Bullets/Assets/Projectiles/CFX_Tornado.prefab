@@ -29,13 +29,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5237753241789432910}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 36.91006, y: 19.159863, z: -416.81027}
   m_LocalScale: {x: 2.2291114, y: 2.3255634, z: 3.271588}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!198 &5237753241789432905
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -3396,7 +3396,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 3
     type: 0
     collisionMode: 0
@@ -4544,7 +4544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e163feb1e5628a4a94ed83f998fc8e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 2878726855493399509, guid: 31921f94c3330a54596d4fd36214e3c5, type: 3}
+  Enemy: {fileID: 5768652792558052181, guid: 7fe7be38fba020e48affccfbf0c350d5, type: 3}
   segundos: 1
   respiracao: 0
 --- !u!199 &5237753241789432906

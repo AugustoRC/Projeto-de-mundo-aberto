@@ -10,17 +10,21 @@ public class SuperScreem : MonoBehaviour
 
     void Start()
     {
-        Invoke("Screem", 1f);
-        StartCoroutine("Destruicao");
+        
     }
 
     void Update()
     {
         if (Input.GetButtonDown("Horizontal") && Input.GetButtonDown("Vertical"))
         {
-            respiracao = true;
+            respiracao = false;
             Debug.Log("Ta dando certo, grita passarinho");
         }
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        Invoke("SuperSonic", 1f);
+        StartCoroutine("Destruicao");
     }
     void SuperSonic()
     {

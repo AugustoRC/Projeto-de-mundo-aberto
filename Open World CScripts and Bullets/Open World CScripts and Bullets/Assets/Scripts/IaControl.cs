@@ -10,6 +10,7 @@ public class IaControl : MonoBehaviour
     float myrot;
     public GameObject lugarBullet;
     public GameObject bullet;
+    public float calma, cooldownTime;
 
     void Start()
     {
@@ -45,12 +46,25 @@ public class IaControl : MonoBehaviour
         Vector3 globalmove = transform.TransformDirection(move);
         chtr.SimpleMove(globalmove * 5);
         transform.Rotate(new Vector3(0, myrot, 0));
-
-        Atacando();
+        calma = Time.time + cooldownTime; 
     }
-    void Atacando()
+
+    void OnTriggerEnter(Collider entrou)
+    {
+        if (entrou.tag == "Player")
+            InvokeRepeating("Attack", 0f, 3f);
+    }
+
+    void Attack()
     {
         Instantiate(bullet, lugarBullet.transform.position, lugarBullet.transform.rotation);
         bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 500);
+        Debug.Log("Bateukrl");
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+            CancelInvoke("Attack");
     }
 }

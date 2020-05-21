@@ -6,6 +6,7 @@ public class PlayerShoot : MonoBehaviour
 {
     public GameObject[] projectilesPrefab;
     int indexWeapon;
+    public int forcatiro;
     void Start()
     {
         
@@ -30,7 +31,7 @@ public class PlayerShoot : MonoBehaviour
         {
             GameObject myprojectile= Instantiate(projectilesPrefab[indexWeapon], transform.position + transform.forward, Quaternion.identity);
 
-            myprojectile.GetComponent<Rigidbody>().AddForce(transform.forward * 500);
+            myprojectile.GetComponent<Rigidbody>().AddForce(transform.forward * forcatiro);
         }
     }
 }
