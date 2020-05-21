@@ -58,8 +58,8 @@ public class IaControl : MonoBehaviour
     void Attack()
     {
         Instantiate(bullet, lugarBullet.transform.position, lugarBullet.transform.rotation);
-        bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 500);
-        Debug.Log("Bateukrl");
+        bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 10000);
+        Debug.Log("Bateu");
     }
 
     void OnTriggerExit(Collider other)
