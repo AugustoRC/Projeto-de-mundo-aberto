@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 4705275285025232}
   - component: {fileID: 1316962199}
   - component: {fileID: 1316962198}
+  - component: {fileID: 2966169871547047688}
   m_Layer: 0
   m_Name: Bench
   m_TagString: Untagged
@@ -124,6 +125,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4842441, y: 0.58802605, z: 0.4658162}
   m_Center: {x: -0.66905206, y: 0.27907848, z: 0.15810347}
+--- !u!208 &2966169871547047688
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115375066864456}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.83, y: 0.34, z: 0.28}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.57, y: 0.28, z: 0.16}
+  m_TimeToStationary: 0.5
 --- !u!1 &1207752615905730
 GameObject:
   m_ObjectHideFlags: 0

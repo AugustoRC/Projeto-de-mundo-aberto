@@ -41,6 +41,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f2594374423de24e8b56b6f63e0cd98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particula: {fileID: 0}
 --- !u!1001 &5542639669370037983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -121,6 +122,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Impls\xE3o Variant"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123279987556253554, guid: 543f85c367b24464098124fcc11a6955,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tiro
       objectReference: {fileID: 0}
     - target: {fileID: 8880819237238517064, guid: 543f85c367b24464098124fcc11a6955,
         type: 3}

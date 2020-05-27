@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 9114134024743064295}
   m_Layer: 0
   m_Name: MachineRoberto
-  m_TagString: Untagged
+  m_TagString: Tiro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
